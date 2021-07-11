@@ -23,11 +23,8 @@ func BucketSort(nums []int) []int {
 	for _, x := range storeList {
 		if len(x) > 1 {
 			list := BubbleSort(x)
-			for _, i := range list{
-				// save result
-				result = append(result, i)
-			}
-
+			// save result
+			result = append(result, list...)
 		}
 	}
 

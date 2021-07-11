@@ -39,9 +39,7 @@ func RadixSort(nums []int) []int {
 		// join arrays into nums
 		for j := range list {
 
-			for _, x := range list[j] {
-				nums = append(nums, x)
-			}
+			nums = append(nums, list[j]...)
 
 			list[j] = []int{}
 		}
