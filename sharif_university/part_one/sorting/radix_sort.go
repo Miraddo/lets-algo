@@ -1,5 +1,11 @@
 package Sorting
 
+import (
+	"strconv"
+)
+
+
+
 // RadixSort Radix Sort Algorithm
 // Range numbers 0 < x < 9999
 
@@ -8,7 +14,8 @@ func RadixSort(nums []int) []int {
 	var list [][]int = make([][]int, 10)
 	var f, s int
 
-	for i := 0; i < len(nums); i++ {
+	// base on result of findMaxLen
+	for i := 0; i < findMaxLen(nums); i++ {
 
 		switch i {
 		case 0:
@@ -42,4 +49,16 @@ func RadixSort(nums []int) []int {
 	}
 
 	return nums
+}
+
+// findMaxLen get list of array return maximum length of number
+func findMaxLen(nums []int) int{
+	var max int
+	for i, x := range nums {
+		if i == 0 || x > max{
+			max = x
+		}
+	}
+
+	return len(strconv.Itoa(max))
 }
