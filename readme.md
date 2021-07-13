@@ -34,6 +34,7 @@ I will write and push all code here. If you want to contribute, you feel free to
     - [1. Two Sum](leetcode/easy/1.TwoSum)
     - [7. Reverse Integer](leetcode/easy/7.ReverseInteger)
     - [9. Palindrome Number](leetcode/easy/9.PalindromeNumber)
+    - [13. Romain To Integer](leetcode/easy/13.RomanToInteger)
     - [26. Remove Duplicates From Sorted Array](leetcode/easy/26.RemoveDuplicatesFromSortedArray)
     
   - Medium
