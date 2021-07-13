@@ -8,7 +8,6 @@ import (
 
 // RadixSort Radix Sort Algorithm
 // Range numbers 0 < x < 9999
-
 func RadixSort(nums []int) []int {
 
 	var list [][]int = make([][]int, 10)
@@ -49,7 +48,7 @@ func RadixSort(nums []int) []int {
 	return nums
 }
 
-// findMaxLen get list of array return maximum length of number
+// findMaxLen get list of array return maximum number
 func findMaxLen(nums []int) int{
 	var max int
 	for i, x := range nums {
