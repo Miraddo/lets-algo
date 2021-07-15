@@ -1,6 +1,6 @@
 package main
 
-// removeElement based on : https://leetcode.com/problems/remove-element
+// RemoveElement based on : https://leetcode.com/problems/remove-element
 func removeElement(nums []int, val int) int {
 	var i int
 	for _ , x := range nums{
