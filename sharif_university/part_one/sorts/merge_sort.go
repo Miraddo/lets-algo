@@ -1,4 +1,4 @@
-package Sorting
+package sorts
 
 // MergeSort Merge Sort Algorithm function
 func MergeSort(nums []int) []int {
@@ -34,7 +34,7 @@ func Merge(listOne, listTwo []int) []int {
 			j++
 		}
 	}
-	// at the end of sorting we looking into array if still we had numbers so we added to our listThree array
+	// at the end of sorts we looking into array if still we had numbers so we added to our listThree array
 	for ; i < ln1; i++ {
 		listThree = append(listThree, listOne[i])
 	}

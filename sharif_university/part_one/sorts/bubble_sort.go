@@ -1,4 +1,4 @@
-package Sorting
+package sorts
 
 
 // BubbleSort Bubble Sort Algorithm

@@ -20,13 +20,13 @@ I will write and push all code here. If you want to contribute, you feel free to
 ## Algorithms
 
 - Sorting
-  - [Insertion Sort](sharif_university/part_one/sorting/insertion_sort.go)
-  - [Counting Sort](sharif_university/part_one/sorting/counting_sort.go)
-  - [Selection Sort](sharif_university/part_one/sorting/selection_sort.go)
-  - [Bubble Sort](sharif_university/part_one/sorting/bubble_sort.go)
-  - [Merge Sort](sharif_university/part_one/sorting/merge_sort.go)
-  - [Bucket Sort](sharif_university/part_one/sorting/bucket_sort.go)
-  - [Radix Sort](sharif_university/part_one/sorting/radix_sort.go)
+  - [Insertion Sort](sharif_university/part_one/sorts/insertion_sort.go)
+  - [Counting Sort](sharif_university/part_one/sorts/counting_sort.go)
+  - [Selection Sort](sharif_university/part_one/sorts/selection_sort.go)
+  - [Bubble Sort](sharif_university/part_one/sorts/bubble_sort.go)
+  - [Merge Sort](sharif_university/part_one/sorts/merge_sort.go)
+  - [Bucket Sort](sharif_university/part_one/sorts/bucket_sort.go)
+  - [Radix Sort](sharif_university/part_one/sorts/radix_sort.go)
   
 
 - LeetCode

@@ -1,4 +1,4 @@
-package Sorting
+package sorts
 
 // SelectionSort Selection Sort Algorithm Function
 func SelectionSort(nums []int) []int {

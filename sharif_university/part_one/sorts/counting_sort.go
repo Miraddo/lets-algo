@@ -1,4 +1,4 @@
-package Sorting
+package sorts
 
 // CountingSort Counting Sort Algorithm
 func CountingSort(nums []int) []int{

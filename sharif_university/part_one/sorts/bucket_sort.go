@@ -1,4 +1,4 @@
-package Sorting
+package sorts
 
 import (
 	"math"

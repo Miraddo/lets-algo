@@ -1,4 +1,4 @@
-package Sorting
+package sorts
 
 func InsertionSort(nums []int) []int {
 	// we should start array from index 1 not 0
