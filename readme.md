@@ -19,7 +19,7 @@ I will write and push all code here. If you want to contribute, you feel free to
 
 ## Algorithms
 
-- Sorting
+- Sorts
   - [Insertion Sort](sharif_university/part_one/sorts/insertion_sort.go)
   - [Counting Sort](sharif_university/part_one/sorts/counting_sort.go)
   - [Selection Sort](sharif_university/part_one/sorts/selection_sort.go)
@@ -27,7 +27,9 @@ I will write and push all code here. If you want to contribute, you feel free to
   - [Merge Sort](sharif_university/part_one/sorts/merge_sort.go)
   - [Bucket Sort](sharif_university/part_one/sorts/bucket_sort.go)
   - [Radix Sort](sharif_university/part_one/sorts/radix_sort.go)
-  
+
+- Searches
+  - [Binary Search](sharif_university/part_one/searches/binary_search)
 
 - LeetCode
   - Easy
