@@ -32,6 +32,7 @@ func TestBinarySearch(t *testing.T) {
 		},
 	}
 
+	// For Iteration Binary Search
 	t.Run("Iteration Binary Search", func(t *testing.T) {
 		for _, x := range listResult {
 			result := binarySearch(x.nums, x.val)
@@ -43,6 +44,7 @@ func TestBinarySearch(t *testing.T) {
 		}
 	})
 
+	// For Recursive Binary Search
 	t.Run("Recursive Binary Search", func(t *testing.T) {
 		for _, x := range listResult {
 

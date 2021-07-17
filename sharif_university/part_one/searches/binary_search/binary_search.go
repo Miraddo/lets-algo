@@ -1,6 +1,6 @@
 package binary_search
 
-// binarySearch is an algorithm for searching inside an sorted array and find the index of value then return it
+// binarySearch is an iteration algorithm for searching inside an sorted array and find the index of value then return it
 func binarySearch(nums []int, val int) (mid int) {
 
 	// up is equal with length of array nums
@@ -31,6 +31,7 @@ func binarySearch(nums []int, val int) (mid int) {
 	return -1
 }
 
+// binarySearchRec Recursive Binary Search Algorithm
 func binarySearchRec(nums []int, val int, up int, down int) (mid int) {
 
 	mid = (up + down) / 2
