@@ -1,7 +1,7 @@
 package binary_search
 
 // binarySearch is an algorithm for searching inside an sorted array and find the index of value then return it
-func binarySearch(nums []int, val int) (mid int ) {
+func binarySearch(nums []int, val int) (mid int) {
 
 	// up is equal with length of array nums
 	// down is 0
@@ -9,6 +9,7 @@ func binarySearch(nums []int, val int) (mid int ) {
 	var up, down int = len(nums) - 1, 0
 	//
 	for range nums {
+
 		mid = (up + down) / 2
 
 		if nums[mid] == val {
@@ -26,6 +27,6 @@ func binarySearch(nums []int, val int) (mid int ) {
 		}
 
 	}
-
-	return
+	// if the number is not exist so we return -1
+	return -1
 }
