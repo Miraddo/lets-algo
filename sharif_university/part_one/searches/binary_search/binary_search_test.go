@@ -25,6 +25,11 @@ func TestBinarySearch(t *testing.T) {
 			val: 1,
 			result: 0,
 		},
+		{
+			nums: []int{1,2,3,4,5,6,7,8,99,100,101},
+			val: 155,
+			result: -1,
+		},
 	}
 
 
