@@ -30,3 +30,28 @@ func binarySearch(nums []int, val int) (mid int) {
 	// if the number is not exist so we return -1
 	return -1
 }
+
+func binarySearchRec(nums []int, val int, up int, down int) (mid int) {
+
+	mid = (up + down) / 2
+
+	if up < down{
+		return -1
+	}
+
+	if nums[mid] == val {
+		return
+	}
+
+	if nums[mid] < val {
+		// set down if nums[mid] value is smaller then val
+		return binarySearchRec(nums, val, up, mid+1)
+	}
+
+	if nums[mid] > val{
+		// set up if nums[mid] value is greater then val
+		return binarySearchRec(nums, val, mid-1, down)
+	}
+
+	return  -1
+}
