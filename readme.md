@@ -35,6 +35,10 @@ I will write and push all code here. If you want to contribute, you feel free to
 - Searches
   - [Binary Search](sharif_university/part_one/searches/binary_search)
 
+- Data Structures
+  - [Stack | Array and LinkedList](sharif_university/part_one/data_stractures/stack)
+
+
 - LeetCode
   - Easy
     - [1. Two Sum](leetcode/easy/1.TwoSum)
