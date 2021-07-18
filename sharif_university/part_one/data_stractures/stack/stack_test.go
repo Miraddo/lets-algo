@@ -65,8 +65,8 @@ func TestStackLinkedList(t *testing.T)  {
 func TestStackArray(t *testing.T)  {
 	t.Run("Stack With Array", func(t *testing.T) {
 
-		stack_push(2)
-		stack_push(3)
+		stackPush(2)
+		stackPush(3)
 
 		t.Run("Stack Push", func(t *testing.T) {
 			if !reflect.DeepEqual([]int{3,2}, stackArray){
@@ -74,42 +74,42 @@ func TestStackArray(t *testing.T)  {
 			}
 		})
 
-		pop := stack_pop()
+		pop := stackPop()
 
 		t.Run("Stack Pop", func(t *testing.T) {
 
-			if stack_length() == 2 && pop != 3 {
+			if stackLength() == 2 && pop != 3 {
 				t.Errorf("Stack Pop is not work we expected %v but got %v", 3, pop)
 			}
 		})
 
-		stack_push(2)
-		stack_push(83)
+		stackPush(2)
+		stackPush(83)
 
 		t.Run("Stack Peak", func(t *testing.T) {
 
-			if stack_peak() != 83 {
-				t.Errorf("Stack Peak is not work we expected %v but got %v", 83, stack_peak())
+			if stackPeak() != 83 {
+				t.Errorf("Stack Peak is not work we expected %v but got %v", 83, stackPeak())
 			}
 		})
 
 		t.Run("Stack Length", func(t *testing.T) {
-			if stack_length() != 3{
-				t.Errorf("Stack Length is not work we expected %v but got %v", 3, stack_length())
+			if stackLength() != 3{
+				t.Errorf("Stack Length is not work we expected %v but got %v", 3, stackLength())
 			}
 		})
 
 		t.Run("Stack Empty", func(t *testing.T) {
-			if stack_empty() == true{
-				t.Errorf("Stack Emtpy is not work we expected %v but got %v", false, stack_empty())
+			if stackEmpty() == true{
+				t.Errorf("Stack Emtpy is not work we expected %v but got %v", false, stackEmpty())
 			}
 
-			stack_pop()
-			stack_pop()
-			stack_pop()
+			stackPop()
+			stackPop()
+			stackPop()
 
-			if stack_empty() == false{
-				t.Errorf("Stack Emtpy is not work we expected %v but got %v", true, stack_empty())
+			if stackEmpty() == false{
+				t.Errorf("Stack Emtpy is not work we expected %v but got %v", true, stackEmpty())
 			}
 		})
 	})
