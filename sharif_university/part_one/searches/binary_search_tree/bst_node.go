@@ -1,3 +1,5 @@
+// Binary Search Tree
+
 package main
 
 import "fmt"
@@ -7,7 +9,7 @@ type Node struct {
 	left, right *Node
 }
 
-type BTree struct {
+type BSTree struct {
 	head	*Node
 	root   *Node
 	length int
@@ -23,7 +25,7 @@ func NewNode(n int) *Node {
 }
 
 // Insert data to node
-func (bt *BTree) Insert(data int) {
+func (bt *BSTree) Insert(data int) {
 	if bt.head == nil {
 		bt.head = NewNode(data)
 		bt.root = bt.head
@@ -56,7 +58,7 @@ func (bt *BTree) Insert(data int) {
 }
 
 // Lookup search in in bts
-func (bt *BTree) Lookup(value int) bool {
+func (bt *BSTree) Lookup(value int) bool {
 	if bt.root == nil {
 		return false
 	}
@@ -81,7 +83,7 @@ func (bt *BTree) Lookup(value int) bool {
 }
 
 func main() {
-	var bt BTree
+	var bt BSTree
 	bt.Insert(5) // first value is our root
 	bt.Insert(3)
 	bt.Insert(2)

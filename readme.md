@@ -34,7 +34,7 @@ I will write and push all code here. If you want to contribute, you feel free to
 
 - Searches
   - [Binary Search](sharif_university/part_one/searches/binary_search)
-  - [Binary Tree Search](sharif_university/part_one/searches/binary_tree_search)
+  - [Binary Search Tree](sharif_university/part_one/searches/binary_search_tree)
 
 - Data Structures
   - [Stack | Array and LinkedList](sharif_university/part_one/data_stractures/stack)
