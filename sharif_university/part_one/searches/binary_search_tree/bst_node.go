@@ -64,7 +64,7 @@ func (bt *BSTree) Lookup(value int) bool {
 	}
 
 	for bt.root != nil {
-		//fmt.Println(bt.root)
+
 		if value == bt.root.value {
 			return true
 		}
@@ -82,15 +82,63 @@ func (bt *BSTree) Lookup(value int) bool {
 	return false
 }
 
+func InOrder(nd *Node) {
+	if nd == nil{
+		return
+	}
+
+	InOrder(nd.left)
+	fmt.Println(nd.value)
+	InOrder(nd.right)
+
+}
+
+func PreOrder(nd *Node) {
+	if nd == nil{
+		return
+	}
+
+	fmt.Println(nd.value)
+	InOrder(nd.left)
+	InOrder(nd.right)
+
+}
+
+func PostOrder(nd *Node) {
+	if nd == nil{
+		return
+	}
+	InOrder(nd.left)
+	InOrder(nd.right)
+	fmt.Println(nd.value)
+
+}
+
+func DeleteNode(nd *Node, value int)  {
+
+}
+
+
 func main() {
 	var bt BSTree
-	bt.Insert(5) // first value is our root
-	bt.Insert(3)
-	bt.Insert(2)
-	bt.Insert(6)
-	bt.Insert(7)
+	bt.Insert(50) // first value is our root
+	bt.Insert(30)
+	bt.Insert(20)
+	bt.Insert(40)
+	bt.Insert(70)
+	bt.Insert(60)
+	bt.Insert(80)
 
 
-	fmt.Println(bt.length)
-	fmt.Println(bt.Lookup(6))
+	//fmt.Println(bt.length)
+	//fmt.Println(bt.Lookup(700))
+
+	InOrder(bt.head)
+	//fmt.Println("=========================")
+	//PreOrder(bt.head)
+	//fmt.Println("=========================")
+	//PostOrder(bt.head)
+	//fmt.Println("=========================")
+
+
 }
