@@ -10,7 +10,7 @@ type Node struct {
 }
 
 type BSTree struct {
-	head	*Node
+	head   *Node
 	root   *Node
 	length int
 }
@@ -35,7 +35,7 @@ func (bt *BSTree) Insert(data int) {
 
 	for bt.head != nil {
 
-		if data >= bt.head.value{
+		if data >= bt.head.value {
 			if bt.head.right == nil {
 				bt.head.right, bt.head = NewNode(data), bt.root
 				bt.length++
@@ -43,7 +43,7 @@ func (bt *BSTree) Insert(data int) {
 			} else {
 				bt.head = bt.head.right
 			}
-		}else{
+		} else {
 			if bt.head.left == nil {
 				bt.head.left, bt.head = NewNode(data), bt.root
 				bt.length++
@@ -69,21 +69,19 @@ func (bt *BSTree) Lookup(value int) bool {
 			return true
 		}
 
-		if value > bt.root.value{
+		if value > bt.root.value {
 			bt.root = bt.root.right
-		}else{
+		} else {
 			bt.root = bt.root.left
 		}
 
-
 	}
-
 
 	return false
 }
 
 func InOrder(nd *Node) {
-	if nd == nil{
+	if nd == nil {
 		return
 	}
 
@@ -94,29 +92,37 @@ func InOrder(nd *Node) {
 }
 
 func PreOrder(nd *Node) {
-	if nd == nil{
+	if nd == nil {
 		return
 	}
 
 	fmt.Println(nd.value)
-	InOrder(nd.left)
-	InOrder(nd.right)
+	PreOrder(nd.left)
+	PreOrder(nd.right)
 
 }
 
 func PostOrder(nd *Node) {
-	if nd == nil{
+	if nd == nil {
 		return
 	}
-	InOrder(nd.left)
-	InOrder(nd.right)
+	PostOrder(nd.left)
+	PostOrder(nd.right)
 	fmt.Println(nd.value)
-
 }
 
-func DeleteNode(nd *Node, value int)  {
-
-}
+//func FindMax(nd *Node) *Node {
+//	if nd == nil{
+//		return nil
+//	}
+//
+//	if nd.right == nil{
+//		return nd
+//	}
+//
+//	return FindMax(nd.right)
+//}
+//
 
 
 func main() {
@@ -129,16 +135,15 @@ func main() {
 	bt.Insert(60)
 	bt.Insert(80)
 
-
 	//fmt.Println(bt.length)
 	//fmt.Println(bt.Lookup(700))
 
 	InOrder(bt.head)
-	//fmt.Println("=========================")
-	//PreOrder(bt.head)
-	//fmt.Println("=========================")
-	//PostOrder(bt.head)
-	//fmt.Println("=========================")
+	fmt.Println("=========================")
+	PreOrder(bt.head)
+	fmt.Println("=========================")
+	PostOrder(bt.head)
+	fmt.Println("=========================")
 
 
 }
