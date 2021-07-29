@@ -39,6 +39,7 @@ I will write and push all code here. If you want to contribute, you feel free to
 - Data Structures
   - [Stack | Array and LinkedList](sharif_university/part_one/data_stractures/stack)
   - [Queue | Array and LinkedList](sharif_university/part_one/data_stractures/queue)
+  - [Trie | LinkedList](sharif_university/part_one/data_stractures/trie)
 
 - LeetCode
   - Easy
