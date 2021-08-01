@@ -6,24 +6,20 @@ package main
 func maxArea(height []int) int {
 	lh, res, j := len(height)-1, 0, 0
 
-	for range height{
-
-		if height[j] < height[lh] {
-			if res < height[j]*(lh-j) {
-				res = height[j] * (lh - j)
+	for i := 0; i < len(height); i++ {
+		if j < i {
+			if height[j] < height[lh] {
+				if res < height[j]*(lh-j) {
+					res = height[j] * (lh - j)
+				}
+				j++
+			} else {
+				if res < height[lh]*(lh-j) {
+					res = height[lh] * (lh - j)
+				}
+				lh--
 			}
-			j++
-		} else {
-			if res < height[lh]*(lh-j) {
-				res = height[lh] * (lh - j)
-			}
-			lh--
 		}
-
-		if j == lh {
-			return res
-		}
-
 	}
 
 	return res
