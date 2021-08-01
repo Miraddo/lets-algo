@@ -53,6 +53,9 @@ I will write and push all code here. If you want to contribute, you feel free to
   - Medium
     - [2. Add Two Numbers](leetcode/medium/2.AddTwoNumbers)
     - [3. Longest Substring Without Repeating Characters](leetcode/medium/3.LengthOfLongestSubstring)
+    - [11. Container With Most Water](leetcode/medium/11.ContainerWithMostWater)
+    - [55. Jump Game](leetcode/medium/55.JumpGame)
     - [74. Search a 2D Matrix](leetcode/medium/74.SearchA2DMatrix)
     - [230. Kth Smallest Element in a BST](leetcode/medium/230.KthSmallestElementInABST)
+    - 
 
