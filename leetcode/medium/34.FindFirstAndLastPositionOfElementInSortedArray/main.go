@@ -38,7 +38,7 @@ func binarySearch(nums []int, target int, pn bool) int {
 }
 
 
-// is is take O(n) is not what we want
+// is take O(n) is not what we want
 //func searchRange(nums []int, target int) []int {
 //	var result []int
 //	var lastIndex int
