@@ -42,6 +42,11 @@ I will write and push all code here. If you want to contribute, you feel free to
   - [Trie | LinkedList](sharif_university/part_one/data_stractures/trie)
 
 - LeetCode
+  - Tutorials 
+    - Array 101
+      - [01 Max Consecutive Ones](leetcode/easy/arrays/01_MaxConsecutiveOnes)
+      - [02 Find Numbers With Even Number Of Digits](leetcode/easy/arrays/02_FindNumbersWithEvenNumberOfDigits)
+      - [03 Squares Of A Sorted Array](leetcode/easy/arrays/03_SquaresOfASortedArray)
   - Easy
     - [1. Two Sum](leetcode/easy/1.TwoSum)
     - [7. Reverse Integer](leetcode/easy/7.ReverseInteger)

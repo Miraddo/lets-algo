@@ -13,7 +13,7 @@ func sortedSquares(nums []int) []int {
 
 	end, start := len(nums)-1, 0
 
-	// if end is 0 it means array has no value
+	// if len(nums) is 0 it means array has no value
 	if len(nums) == 0 {
 		return nums
 	}
