@@ -1,6 +1,7 @@
 package stack
 
 import (
+	"container/list"
 	"reflect"
 	"testing"
 )
@@ -112,5 +113,69 @@ func TestStackArray(t *testing.T)  {
 				t.Errorf("Stack Emtpy is not work we expected %v but got %v", true, stackEmpty())
 			}
 		})
+	})
+}
+
+
+
+
+
+
+// TestStackLinkedListWithList for testing Stack with Container/List Library
+func TestStackLinkedListWithList(t *testing.T)  {
+	stackList := &SList{
+		stack: list.New(),
+	}
+
+
+	t.Run("Stack Push", func(t *testing.T) {
+
+		stackList.Push(2)
+		stackList.Push(3)
+
+		if stackList.Length() != 2{
+			t.Errorf("Stack Push is not work we expected %v but got %v", 2, stackList.Length())
+		}
+	})
+
+
+	t.Run("Stack Pop", func(t *testing.T) {
+		pop, _ := stackList.Pop()
+
+		if stackList.Length() == 1 && pop != 3 {
+			t.Errorf("Stack Pop is not work we expected %v but got %v", 3, pop)
+		}
+	})
+
+
+
+	t.Run("Stack Peak", func(t *testing.T) {
+
+		stackList.Push(2)
+		stackList.Push(83)
+		peak, _ := stackList.Peak()
+		if peak != 83 {
+			t.Errorf("Stack Peak is not work we expected %v but got %v", 83, peak)
+		}
+	})
+
+	t.Run("Stack Length", func(t *testing.T) {
+		if stackList.Length() != 3{
+			t.Errorf("Stack Length is not work we expected %v but got %v", 3, stackList.Length())
+		}
+	})
+
+	t.Run("Stack Empty", func(t *testing.T) {
+		if stackList.Empty() == true{
+			t.Errorf("Stack Emtpy is not work we expected %v but got %v", false, stackList.Empty())
+		}
+
+		stackList.Pop()
+		stackList.Pop()
+		stackList.Pop()
+
+		if stackList.Empty() == false{
+			t.Errorf("Stack Emtpy is not work we expected %v but got %v", true, stackList.Empty())
+		}
 	})
 }
